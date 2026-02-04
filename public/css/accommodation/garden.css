@@ -111,6 +111,9 @@ p {
 
 /* Mobile Phones */
 @media (max-width: 480px) {
+  .gallery-section {
+    padding: 160px 8%;
+  }
   .gallery img {
     height: 250px;
   }
