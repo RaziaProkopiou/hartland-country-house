@@ -4,10 +4,12 @@ This repository contains a demo build of the Hartland Estate website, created as
 
 The project focused on presenting the estate clearly and professionally, highlighting accommodation options, shared spaces, and the surrounding environment through a clean, content-led layout.
 
+
 ## Role
 
 UI/UX Design & Front-End Development  
 This was a collaboration with another developer who handled backend integration.
+
 
 ## Scope & Focus
 
@@ -16,15 +18,18 @@ This was a collaboration with another developer who handled backend integration.
 - Image-led layouts to showcase the estate
 - Lightweight interactivity for improved user experience
 
+
 ## Tech Stack
 
 - HTML
 - CSS
 - JavaScript
 
+
 ## Live Demo
 
 View the demo at: https://RaziaProkopiou.github.io/hartland-country-house/
+
 
 ## Getting Started
 
@@ -41,6 +46,7 @@ For the original Node.js setup (if needed):
 - Ensure Node.js is installed.
 - Run `npm install` (though not required for the demo).
 - Start the server with `node server.js` and visit `http://localhost:3000`.
+
 
 ## Notes
 
