@@ -61,3 +61,8 @@ p {
     bottom: 0;
   }
   
+@media screen and (max-width: 1024px) {
+  .rooms {
+    padding: 20px 8%;
+  }
+}
