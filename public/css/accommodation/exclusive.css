@@ -125,9 +125,6 @@
   
   /* Mobile Phones */
   @media (max-width: 480px) {
-    .gallery-section {
-      padding: 20px 8%;
-    }
     .gallery img {
       height: 250px;
     }

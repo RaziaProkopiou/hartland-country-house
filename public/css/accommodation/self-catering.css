@@ -59,9 +59,3 @@
     width: 600px;
     bottom: 0;
   }
-
-@media screen and (max-width: 1024px) {
-  .self-catering {
-    padding: 20px 8%;
-  }
-}

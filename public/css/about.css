@@ -113,7 +113,7 @@ p {
 /* Responsive Design */
 @media (max-width: 1200px) {
   .our-story {
-    padding: 20px 8%;
+    padding: 10px 5%;
   }
 
   .our-story-container {
@@ -135,7 +135,7 @@ p {
   .mission-container {
     flex-direction: column;
     gap: 0;
-    padding: 20px 8%;
+    padding: 10px 5%;
   }
   .mission-image {
     width: 100%;
@@ -150,11 +150,11 @@ p {
   }
   .relax-image {
     width: 100%;
-    padding: 20px 8%;
+    padding: 20px 5%;
   }
   .relax-content {
     flex: 1;
     max-width: 100%;
-    padding: 0 8%;
+    padding: 0 5%;
   }
 }

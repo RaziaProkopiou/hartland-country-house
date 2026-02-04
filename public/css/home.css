@@ -318,21 +318,6 @@
 
 /* Mobile Phones */
 @media (max-width: 480px) {
-  .welcome {
-    padding: 20px 8%;
-  }
-  .accommodation {
-    padding: 20px 8%;
-  }
-  .ammenities {
-    padding: 20px 8%;
-  }
-  .gallery-section {
-    padding: 20px 8%;
-  }
-  .location {
-    padding: 20px 8%;
-  }
   .gallery img {
     height: 250px;
   }
