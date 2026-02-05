@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hartland Country House</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+    <link
+      rel="preload"
+      href="./assets/images/hero-carousel/garden-entrance.jpg"
+      as="image"
+    />
+    <link
+      rel="preload"
+      href="./assets/images/background-images/Kitchen.png"
+      as="image"
+    />
+    <link rel="preload" href="./assets/images/gallery/image1.jpg" as="image" />
+    <link rel="preload" href="./assets/images/gallery/image2.jpeg" as="image" />
+    <link rel="preload" href="./assets/images/gallery/image3.webp" as="image" />
+
+    <!---google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar" id="navbar">
+        <div class="container">
+          <div class="header-icons">
+            <a
+              href="https://wa.me/27836274426"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Contact us on WhatsApp"
+              class="icon"
+            >
+              <img src="assets/icons/phone-icon.png" alt="Call Us" />
+            </a>
+            <a
+              href="https://maps.app.goo.gl/59JaWYgyjmdWmM4q9"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Click to open google maps"
+              class="icon"
+            >
+              <img src="assets/icons/address-icon.png" alt="Our Address" />
+            </a>
+          </div>
+          <div class="main-menu">
+            <div class="logo">
+              <a href="index.html">
+                <img src="assets/logo.png" alt="logo" />
+              </a>
+            </div>
+            <ul>
+              <li>
+                <a href="index.html" class="active">Home</a>
+              </li>
+              <li>
+                <a href="about.html">Our Story</a>
+              </li>
+              <li>
+                <a href="accommodation.html">Accommodation</a>
+              </li>
+              <li>
+                <a href="gallery.html">Gallery</a>
+              </li>
+              <li>
+                <a href="contact.html">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+          <div class="quote-button">
+            <a href="#" class="btn btn-primary">Book Now</a>
+          </div>
+          <!-- Hamburger Button -->
+          <button class="hamburger-button" id="hamburger-icon">
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+          </button>
+          <div class="mobile-menu" id="mobile-menu">
+            <ul>
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+              <li>
+                <a href="about.html">Our Story</a>
+              </li>
+              <li>
+                <a href="accommodation.html">Accommodation</a>
+              </li>
+              <li>
+                <a href="gallery.html">Gallery</a>
+              </li>
+              <li>
+                <a href="contact.html">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero/carousel -->
+      <section class="carousel-container">
+        <div>
+          <button class="carousel-prev" aria-label="Previous">&#10094;</button>
+          <div class="carousel">
+            <img
+              src="./assets/images/hero-carousel/garden-entrance.jpg"
+              alt="Garden at entrance"
+              class="carousel-image"
+              loading="lazy"
+            />
+            <video class="carousel-video" autoplay loop muted>
+              <source
+                src="./assets/images/hero-carousel/view-from-above.MP4"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
+            <img
+              src="./assets/images/hero-carousel/image2.jpg"
+              alt="Image 2"
+              class="carousel-image"
+              loading="lazy"
+            />
+            <img
+              src="./assets/images/hero-carousel/main-house-pool.png"
+              alt="Image 3"
+              class="carousel-image"
+              loading="lazy"
+            />
+            <img
+              src="./assets/images/hero-carousel/entrance-door.jpg"
+              alt="Image 4"
+              class="carousel-image"
+              loading="lazy"
+            />
+          </div>
+          <button class="carousel-next" aria-label="Next">&#10095;</button>
+        </div>
+
+        <!-- Dot Indicators Container -->
+        <div class="carousel-dots"></div>
+
+        <!-- Lightbox container (hidden initially) -->
+        <div class="lightbox" id="lightbox">
+          <button class="lightbox-prev" aria-label="Previous">&#10094;</button>
+          <img
+            id="lightbox-image"
+            class="lightbox-image"
+            alt="Full screen image"
+            loading="lazy"
+          />
+          <button class="lightbox-next" aria-label="Next">&#10095;</button>
+          <span class="lightbox-close" id="lightbox-close">&times;</span>
+        </div>
+      </section>
+
+      <!-- Welcome Section -->
+      <section class="welcome">
+        <img
+          src="./assets/images/background-images/palm-illustration.png"
+          alt="Palm illustration"
+          class="palm-left"
+          loading="lazy"
+        />
+        <div class="welcome-container">
+          <img
+            src="./assets/logo-image.png"
+            alt="Hartland Logo"
+            loading="lazy"
+          />
+          <h1>Welcome to Hartland Country House</h1>
+          <p>
+            Nestled in the heart of Oudtshoorn, Hartland is a breathtaking
+            French Country House that epitomizes elegance and tranquility. Set
+            on an expansive estate, this extraordinary sanctuary offers an
+            escape like no other. Whether bathed in the golden sun of summer,
+            with a sparkling 15-meter swimming pool inviting you to relax and
+            unwind, or during the cozy, crisp winter months, where an inviting
+            indoor fireplace cast a warm glow, Hartland promises an experience
+            that enchants year-round.
+          </p>
+          <a href="#" class="btn btn-primary">Book Now</a>
+        </div>
+        <img
+          src="./assets/images/background-images/double-palm-illustration.png"
+          alt="Palm illustration"
+          class="palm-right"
+          loading="lazy"
+        />
+      </section>
+
+      <!-- Feature video -->
+      <section class="property-video">
+        <video
+          autoplay
+          loop
+          muted
+          preload="auto"
+          poster="./assets/images/background-images/property-zoom-poster.webp"
+        >
+          <source
+            alt="Property Zoom-in video"
+            src="./assets/images/background-images/property-zoom.MP4"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+      </section>
+
+      <!-- Accommodation Section -->
+      <section class="accommodation">
+        <img
+          src="./assets/images/background-images/palm-illustration.png"
+          alt="Palm illustration"
+          class="palm-leaf"
+          loading="lazy"
+        />
+        <div class="accommodtion-container">
+          <h2>A home away from Home</h2>
+          <div class="small-carousel-container">
+            <button class="small-carousel-prev">&#10094;</button>
+            <div class="caption">Click on any of the images to enlarge</div>
+            <div class="small-carousel">
+              <img
+                src="./assets/images/home-small-carousel/Bedroom1.jpg"
+                alt="Room 1"
+                loading="lazy"
+              />
+              <img
+                src="./assets/images/home-small-carousel/Bedroom2.jpg"
+                alt="Room 2"
+                loading="lazy"
+              />
+              <img
+                src="./assets/images/home-small-carousel/Bedroom3.jpg"
+                alt="Room 3"
+                loading="lazy"
+              />
+              <img
+                src="./assets/images/home-small-carousel/Bedroom4.png"
+                alt="Room 4"
+                loading="lazy"
+              />
+              <img
+                src="./assets/images/home-small-carousel/Bedroom5.jpg"
+                alt="Room 5"
+                loading="lazy"
+              />
+              <img
+                src="./assets/images/home-small-carousel/Bedroom6.jpg"
+                alt="Room 6"
+                loading="lazy"
+              />
+              <img
+                src="./assets/images/home-small-carousel/swing.jpg"
+                alt="Swing"
+                loading="lazy"
+              />
+              <img
+                src="./assets/images/home-small-carousel/stairs.jpg"
+                alt="Stairs"
+                loading="lazy"
+              />
+              <img
+                src="./assets/images/home-small-carousel/bathroom.jpg"
+                alt="Bathroom"
+                loading="lazy"
+              />
+            </div>
+            <button class="small-carousel-next">&#10095;</button>
+            <div class="small-carousel-dots"></div>
+          </div>
+
+          <!-- Lightbox container (hidden initially) -->
+          <div class="lightbox" id="small-lightbox">
+            <img
+              id="small-lightbox-image"
+              class="lightbox-image"
+              loading="lazy"
+            />
+            <button class="small-lightbox-prev" aria-label="Previous">
+              &#10094;
+            </button>
+            <button class="small-lightbox-next" aria-label="Next">
+              &#10095;
+            </button>
+            <span class="small-lightbox-close" id="small-lightbox-close"
+              >&times;</span
+            >
+          </div>
+          <p>
+            Boasting 5 exquisitely appointed bedrooms, including 4 with
+            luxurious ensuites, and an additional bedroom with a bathroom just
+            across the hall, this home effortlessly combines comfort and
+            sophistication. The interiors are adorned with tasteful décor, while
+            the fully equipped kitchen and spacious living room create a
+            welcoming atmosphere for both intimate gatherings and grand
+            celebrations. Step outside onto the stunning stoep, where panoramic
+            views of the pool and sprawling estate are framed by the lush beauty
+            of ancient olive trees, offering the perfect backdrop for al fresco
+            dining or quiet reflection. The grounds are a wonder in themselves,
+            with abundant picnic spots for unforgettable family moments and a
+            delightful jungle gym to keep the little ones entertained. Hartland
+            is more than just a home—it’s a captivating retreat, where nature,
+            luxury, and comfort come together in perfect harmony. Every detail
+            of this magical property invites you to relax, rejuvenate, and
+            experience the very best of countryside living.
+          </p>
+          <a href="accommodation.html" class="btn btn-secondary"
+            >Explore More</a
+          >
+        </div>
+      </section>
+
+      <!-- Ammenities Section -->
+      <section class="ammenities">
+        <img
+          src="./assets/images/background-images/Kitchen.png"
+          class="kitchen-background"
+          alt="Kitchen"
+          loading="lazy"
+        />
+        <div class="ammenities-container">
+          <h2>Relax and Enjoy</h2>
+          <div class="card-container">
+            <div class="card">
+              <h3>Room Amenities</h3>
+              <ul class="custom-bullets">
+                <li>Socket near the bed</li>
+                <li>Drying rack for clothing</li>
+                <li>Private bathroom</li>
+                <li>Clothes rack</li>
+                <li>Hypoallergenic</li>
+                <li>Mosquito net</li>
+                <li>Soundproof</li>
+                <li>Private entrance</li>
+                <li>Interconnecting room/s available</li>
+                <li>Bathtub</li>
+                <li>Fan</li>
+                <li>Ironing facilities</li>
+                <li>Air conditioning</li>
+              </ul>
+              <br />
+              <h3>Accessibility</h3>
+              <p>Upper floors accessible by stairs only</p>
+              <br />
+              <h3>Internet</h3>
+              <p>Wi-Fi is available in the rooms and is free of charge.</p>
+            </div>
+            <div class="card">
+              <h3>Outdoors</h3>
+              <ul class="custom-bullets">
+                <li>Outdoor fireplace</li>
+                <li>Picnic area</li>
+                <li>Outdoor furniture</li>
+                <li>Outdoor dining area</li>
+                <li>Sun deck</li>
+                <li>Barbecue</li>
+                <li>Private pool</li>
+                <li>BBQ facilities</li>
+                <li>Patio</li>
+                <li>Terrace</li>
+                <li>Garden</li>
+                <li>Balcony</li>
+              </ul>
+              <br />
+              <h3>Pets</h3>
+              <p>Pets are allowed on request. No extra charges.</p>
+              <br />
+              <h3>Parking</h3>
+              <p>Free private parking is available on site.</p>
+            </div>
+            <div class="card">
+              <h3>Kitchen</h3>
+              <ul class="custom-bullets">
+                <li>Dining table</li>
+                <li>Coffee machine</li>
+                <li>Cleaning products</li>
+                <li>Toaster</li>
+                <li>Stovetop</li>
+                <li>Oven</li>
+                <li>Kitchenware</li>
+                <li>Electric kettle</li>
+                <li>Dryer</li>
+                <li>Kitchen</li>
+                <li>Washing machine</li>
+                <li>Dishwasher</li>
+                <li>Microwave</li>
+                <li>Refrigerator</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gallery Section -->
+      <section class="gallery-section">
+        <h2>Picture-Perfect Stays</h2>
+        <div class="caption">Click on any of the images to enlarge</div>
+        <br />
+        <img
+          src="./assets/images/background-images/double-palm-illustration.png"
+          alt="Palm illustration"
+          class="palm-background-left"
+          loading="lazy"
+        />
+        <img
+          src="./assets/images/background-images/double-palm-illustration.png"
+          alt="Palm illustration"
+          class="palm-background-right"
+          loading="lazy"
+        />
+        <div class="gallery">
+          <img
+            src="./assets/images/gallery/image1.jpg"
+            alt="Image 1"
+            class="gallery-image"
+            loading="lazy"
+          />
+          <img
+            src="./assets/images/gallery/image2.jpeg"
+            alt="Image 2"
+            class="gallery-image"
+            loading="lazy"
+          />
+          <img
+            src="./assets/images/gallery/image3.webp"
+            alt="Image 3"
+            class="gallery-image"
+            loading="lazy"
+          />
+          <img
+            src="./assets/images/gallery/image4.jpeg"
+            alt="Image 4"
+            class="gallery-image"
+            loading="lazy"
+          />
+          <img
+            src="./assets/images/gallery/image5.png"
+            alt="Image 5"
+            class="gallery-image"
+            loading="lazy"
+          />
+          <img
+            src="./assets/images/gallery/image6.jpeg"
+            alt="Image 6"
+            class="gallery-image"
+            loading="lazy"
+          />
+          <img
+            src="./assets/images/gallery/image7.jpg"
+            alt="Image 7"
+            class="gallery-image"
+            loading="lazy"
+          />
+          <img
+            src="./assets/images/gallery/image8.png"
+            alt="Image 8"
+            class="gallery-image"
+            loading="lazy"
+          />
+          <img
+            src="./assets/images/gallery/image9.jpg"
+            alt="Image 9"
+            class="gallery-image"
+            loading="lazy"
+          />
+        </div>
+        <!-- Lightbox Container -->
+        <div class="gallery-lightbox" id="gallery-lightbox">
+          <span class="close-gallery-lightbox">&times;</span>
+          <img
+            class="gallery-lightbox-image"
+            id="gallery-lightbox-image"
+            src=""
+            alt=""
+            loading="lazy"
+          />
+        </div>
+      </section>
+
+      <!-- Reviews Section -->
+      <!-- <section class="reviews">
+        <h2>Guest Experiences: Real Stays, Honest Reviews</h2>
+        <div class="review-container">
+        
+        </div> -->
+
+      <!-- Location Section -->
+      <section class="location">
+        <img
+          src="./assets/images/background-images/palm-illustration.png"
+          alt="Palm illustration"
+          class="palm-leaf-location"
+          loading="lazy"
+        />
+        <div class="location-container">
+          <h2>Location</h2>
+          <div class="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.9377033428545!2d22.1982131!3d-33.5809667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dd5c184c7e6f49b%3A0x750626a11c1b460c!2sHartland%20Country%20House!5e0!3m2!1sen!2sza!4v1740238955166!5m2!1sen!2sza"
+              width="100%"
+              height="100%"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            >
+            </iframe>
+          </div>
+        </div>
+      </section>
+
+      <!--Plan a stay-->
+      <section class="plan-stay">
+        <img
+          src="./assets/images/background-images/pool-pink-sky.jpeg"
+          alt="Pool view & pink clouds"
+          loading="lazy"
+        />
+        <div class="plan-stay-container">
+          <img
+            src="./assets/images/background-images/Plan-a-Stay-With-Us.png"
+            alt="Plan a stay with us"
+            loading="lazy"
+          />
+          <a href="#" class="plan-stay-button">Book Now</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Logo Section -->
+        <a href="index.html" class="footer-logo">
+          <img src="./assets/logo-image-round.jpg" alt="Hartland Logo" />
+        </a>
+
+        <!-- Quick Links -->
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">Our Story</a></li>
+            <li><a href="accommodation.html">Accommodation</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Location/Contact -->
+        <div class="footer-contact">
+          <h4>Location/Contact</h4>
+          <address>
+            30 Klein Karoo St, Oudtshoorn, 6625<br />
+            Phone: 083 627 4426<br />
+            <!-- Email:
+            <a href="mailto:contistaal@gmail.com" title="Send us an email"
+              >contistaal@gmail.com</a
+            > -->
+          </address>
+          <div class="footer-social">
+            <a
+              href="https://www.facebook.com/people/Hartland-Country-House/100054546755721/?mibextid=ZbWKwL"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Follow us on Facebook"
+              ><img src="assets/icons/fb-icon.svg" alt="Facebook"
+            /></a>
+            <!-- <a
+              href="https://www.instagram.com/conti_staal/"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Follow us on Instagram"
+              ><img src="assets/icons/insta-icon.svg" alt="Instagram"
+            /></a> -->
+            <a
+              href="https://wa.me/27836274426"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Contact us on WhatsApp"
+              ><img src="assets/icons/whatsapp-icon.svg" alt="WhatsApp"
+            /></a>
+          </div>
+        </div>
+      </div>
+      <!-- Copyright -->
+      <div class="footer-copyright">Copyright© Hartland Country House 2025</div>
+    </footer>
+    <button id="scrollToTopBtn">&#8679;</button>
+    <script src="js/main.js"></script>
+  </body>
+</html>
